@@ -1,7 +1,11 @@
 from flask import Flask, request, jsonify
-from app_graphql.schema import schema
 from app_graphql.playground_html import PLAYGROUND_HTML
 from ariadne import graphql_sync
+from app_graphql.generate_schema import create_schema_definition
+
+# Generate Schema Definition
+create_schema_definition()
+from app_graphql.generated_schema import schema
 
 # Flask application
 app = Flask(__name__)
