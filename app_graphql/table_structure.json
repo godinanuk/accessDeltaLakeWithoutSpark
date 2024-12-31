@@ -1,0 +1,8 @@
+{
+  "table_name": "Row",
+  "columns": [
+    {"name": "id", "type": "Int", "required": true},
+    {"name": "name", "type": "String", "required": true},
+    {"name": "value", "type": "Float", "required": false}
+  ]
+}
